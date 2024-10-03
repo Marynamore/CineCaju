@@ -52,7 +52,7 @@ Abaixo estão as principais funcionalidades do projeto, organizadas como um chec
 
 ## 📊 Requisitos Não Funcionais
 
-1. **[RNF001] Usabilidade**: Interface responsiva e intuitiva para desktop e dispositivos móveis.
+1. **[RNF001] Usabilidade**: Interface responsiva e intuitiva para desktop e dispositivos móveis, acima de 1 Gb ram.
    - Prioridade: Essencial
 
 2. **[RNF002] Segurança**: Autenticação segura via JWT e criptografia de senhas.
@@ -69,6 +69,15 @@ Abaixo estão as principais funcionalidades do projeto, organizadas como um chec
 
 6. **[RNF006] Compatibilidade com Dispositivos Móveis**: Funcionar em smartphones e tablets com resolução mínima de 1280x720.
    - Prioridade: Essencial
+  
+## 📝 Perfis de acesso: 
+
+- **Administrador:** Acesso total
+- **Moderador:** Acesso 
+- **Desenvolvedor Teste (Corretor de Bugs)** - privilegiado
+- **Gestor de Conteúdo Usuário Final** - privilegiado
+- **Usuário**
+
 
 
 ![cinecaju](assets/cinecaju_logo.jpeg)
