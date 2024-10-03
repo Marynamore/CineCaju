@@ -1,20 +1,252 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.12/dist/css/splide.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.12/dist/js/splide.min.js"></script>
+    <title>Geeked</title>
 </head>
 <body>
-    <header>
+    <div id="all">
+        <header>
+            <section class="container__header">
+                <nav class="header__menu">
+                    <div class="header__logo">
+                        <img src="./public/assets/logotipo.jpg" alt="Logotipo Geeked">
+                    </div>
+                    <div class="header__menu--links" id="headerMenuLinks">
+                        <a href="index.html"><i class="fas fa-house"></i> Inicio</a>
+                        <div class="dropdown">
+                            <a href="#">Últimas Notícias <i class="fas fa-chevron-down"></i></a>
+                            <div class="dropdown-content">
+                                <a href="#">Notícia 1</a>
+                                <a href="#">Notícia 2</a>
+                            </div>
+                        </div>
+                        <div class="dropdown">
+                            <a href="#">Categoria <i class="fas fa-chevron-down"></i></a>
+                            <div class="dropdown-content">
+                                <a href="#sugestoes">Sugestões</a>
+                                <a href="#criticas">Críticas</a>
+                            </div>
+                        </div>
+                        <a href="../app/user/view/perfil_usuario.php" class="header__user">
+                            <img src="./assets/pessoas/pic-1.png" alt="Avatar usuário">
+                        </a>
+                        <a href="../app/user/control/sair_usu_action.php"><i class="fas fa-sign-out-alt"></i> Sair</a>
+                    </div>
+                    <div class="header__menu--input">
+                        <img src="./public/assets/avaliacao/search-icon.svg" alt="Ícone de pesquisa" class="searchIcon">
+                        <input type="text" name="movie-name" id="movie-name" placeholder="Digite algum filme para pesquisar...">
+                    </div>
+                </nav>
+                <section class="header__content">
+                    <div class="header__wrap">
+                        <article class="banner">
+                            <h1>Nunca mais fique sem saber o que assistir</h1>
+                            <p>O seu guia definitivo de cinema & streaming, com uma curadoria especial para todos os gostos.</p>
+                            <div class="header__social">
+                                <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                                <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                                <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+                            </div>
+                        </article>
+                    </div>
+                </section>
+            </section>
+        </header>
+        <main>
+            <section id="sugestoes" class="container">
+                <div class="container__main">
+                    <div class="title__wrapper">
+                        <h3 class="category__title--h3">Sugestões</h3>
+                        <p class="title__p">Uma seleção com dicas dos melhores filmes e séries do momento.</p>
+                    </div>
+                    <section id="sugestoes-carousel" class="splide">
+                        <div class="splide__track">
+                            <div class="splide__list">
+                                <div class="splide__slide">
+                                    <div class="stream__item--wrap">
+                                        <a href="../app/cine/view/filme_resenha.html" class="stream__item--link">
+                                            <figure class="stream__mov--poster">
+                                                <img src="https://uploads-ssl.webflow.com/5ed80f2ac70db098b0ea9000/6435a9cb123023521f3f1f3f_230406---AIR---poster_01.jpg" alt="AIR: A História Por Trás do Logo">
+                                                <div class="streaming__badge--wrap">
+                                                    <img src="https://uploads-ssl.webflow.com/5ed41d047eda2a2abfcf894c/620d9da8ab0daf22f225f489_Streaming%20Badges-01.svg" loading="lazy" alt="Ícone da Netflix" class="streaming__badge condition__invisible">
+                                                    <img src="https://uploads-ssl.webflow.com/5ed41d047eda2a2abfcf894c/620d9db3e97ed4d2ff7026b9_Streaming%20Badges-02.svg" loading="lazy" alt="Ícone da Prime Video" class="streaming__badge">
+                                                </div>
+                                            </figure>
+                                        </a>
+                                    </div>
+                                    <div class="stream__title">
+                                        <a href="/titulo/air-a-historia-por-tras-do-logo" target="_blank" class="c-title-5 truncate"> AIR: A História Por Trás do Logo </a>
+                                        <p class="c-title-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur illum inventore mollitia in.</p>
+                                    </div>
+                                </div>
+                                <!-- Adicione mais slides aqui -->
+                            </div>
+                        </div>
+                        <div class="splide__arrows">
+                            <button class="splide__arrow splide__arrow--prev">‹</button>
+                            <button class="splide__arrow splide__arrow--next">›</button>
+                        </div>
+                    </section>
+                </div>
+            </section>
+            <section class="container">
+                <div class="container__main">
+                    <div class="title__wrapper">
+                        <h3 class="category__title--h3">Destaques</h3>
+                    </div>
+                    <section class="stream__details">
+                        <div class="stream__details__item">
+                            <a href="#" class="stream__details__link">
+                                <img src="https://uploads-ssl.webflow.com/5ed80f2ac70db098b0ea9000/6436efbdbf2b133df5c83788_230409---Litsta-Estreias-do-me%CC%82s-de-Marc%CC%A7o-2023-Thumbnail-01.jpg" loading="lazy" alt="Destaque 1" class="stream__details__image">
+                                <div class="stream__details__gradient"></div>
+                                <div class="stream__details__bottom">
+                                    <p class="title__bottom">Melhores Filmes & Séries Para Assistir em Abril de 2023</p>
+                                    <div class="stream__details__info">
+                                        <span>Lista</span>
+                                        <span class="space"></span>
+                                        <span class="details">Lançamentos</span>
+                                    </div>
+                                </div>
+                                <div class="stream__details__slider--info">
+                                    <div class="stream__details__link--icon icon-small">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                                            <path fill="none" d="M0 0h24v24H0z"></path>
+                                            <path fill="currentColor" d="M13 4.07V1l-2 .06v3H8v3h3v6.61c-2.33.75-4 2.97-4 5.61h2c0-2.48 1.51-4.6 3.72-5.37V10H16V7h-3V4.07z"></path>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </section>
+                </div>
+            </section>
+            <section id="criticas" class="container container__reviews">
+                <div class="container__main">
+                    <div class="title__wrapper">
+                        <h3 class="category__title--h3">Críticas</h3>
+                        <p class="title__p">Confira as opiniões e análises dos melhores filmes e séries.</p>
+                    </div>
+                    <section id="criticas-carousel" class="splide">
+                        <div class="splide__track">
+                            <div class="splide__list">
+                                <div class="splide__slide">
+                                    <div class="grid-container">
+                                        <div class="grid-item">
+                                            <figure class="stream__mov--poster">
+                                                <img src="https://uploads-ssl.webflow.com/5ed80f2ac70db098b0ea9000/6435a9cb123023521f3f1f3f_230406---AIR---poster_01.jpg" alt="AIR: A História Por Trás do Logo">
+                                            </figure>
+                                            <div class="stream__title">                            
+                                                <div class="streaming__badge--wrap">
+                                                    <img src="https://uploads-ssl.webflow.com/5ed41d047eda2a2abfcf894c/620d9da8ab0daf22f225f489_Streaming%20Badges-01.svg" loading="lazy" alt="Ícone da Netflix" class="streaming__badge">
+                                                </div>
+                                                <a href="/titulo/air-a-historia-por-tras-do-logo" target="_blank" class="c-title-5 truncate">AIR: A História Por Trás do Logo</a>
+                                                <p class="c-title-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur illum inventore mollitia in.</p>
+                                            </div>
+                                        </div>
+                                        <!-- Adicione mais itens da grid aqui -->
+                                    </div>
+                                </div>
+                                <!-- Adicione mais slides aqui -->
+                            </div>
+                        </div>
+                        <div class="splide__arrows">
+                            <button class="splide__arrow splide__arrow--prev">‹</button>
+                            <button class="splide__arrow splide__arrow--next">›</button>
+                        </div>
+                    </section>
+                </div>
+            </section>
+            <section class="container">
+                <div class="container__main">
+                    <div class="title__wrapper">
+                        <h3 class="category__title--h3">Destaques</h3>
+                    </div>
+                    <section class="stream__details">
+                        <div class="stream__details__item">
+                            <a href="#" class="stream__details__link">
+                                <img src="https://uploads-ssl.webflow.com/5ed80f2ac70db098b0ea9000/6436efbdbf2b133df5c83788_230409---Litsta-Estreias-do-me%CC%82s-de-Marc%CC%A7o-2023-Thumbnail-01.jpg" loading="lazy" alt="Destaque 1" class="stream__details__image">
+                                <div class="stream__details__gradient"></div>
+                                <div class="stream__details__bottom">
+                                    <p class="title__bottom">Melhores Filmes & Séries Para Assistir em Abril de 2023</p>
+                                    <div class="stream__details__info">
+                                        <span>Lista</span>
+                                        <span class="space"></span>
+                                        <span class="details">Lançamentos</span>
+                                    </div>
+                                </div>
+                                <div class="stream__details__slider--info">
+                                    <div class="stream__details__link--icon icon-small">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                                            <path fill="none" d="M0 0h24v24H0z"></path>
+                                            <path fill="currentColor" d="M13 4.07V1l-2 .06v3H8v3h3v6.61c-2.33.75-4 2.97-4 5.61h2c0-2.48 1.51-4.6 3.72-5.37V10H16V7h-3V4.07z"></path>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </section>
+                </div>
+            </section>
+        </main>
+        <footer class="container__footer">
+            <section class="container__main">
+                <div class="footer__wrap">
+                    <div class="footer__info">
+                        <p>Geeked © 2023. Todos os direitos reservados.</p>
+                        <div class="footer__social">
+                            <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </footer>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            new Splide('#sugestoes-carousel', {
+                type: 'loop',
+                perPage: 3,
+                autoplay: true,
+                focus: 'center',
+                pagination: false,
+                arrows: true,
+                breakpoints: {
+                    640: {
+                        perPage: 1,
+                    },
+                    1024: {
+                        perPage: 2,
+                    }
+                }
+            }).mount();
 
-    </header>
-    <main>
+            new Splide('#criticas-carousel', {
+                type: 'loop',
+                perPage: 1, // Use 1 item per page to display grid inside the slide
+                autoplay: true,
+                pagination: false,
+                arrows: true,
+            }).mount();
+        });
+    </script>
+    <script>
+        const menuIcon = document.getElementById('menuIcon');
+        const headerMenuLinks = document.getElementById('headerMenuLinks');
 
-    </main>
-    <footer>
-        
-    </footer>
+        // Adiciona evento de clique ao ícone do menu
+        menuIcon.addEventListener('click', () => {
+            headerMenuLinks.classList.toggle('active');
+        });
+    </script>
 </body>
 </html>
