@@ -7,17 +7,14 @@ Este projeto visa criar um site de críticas construtivas de filmes em cartaz. A
 
 Abaixo estão as principais funcionalidades do projeto, organizadas como um checklist:
 
-- [ ] Permitir que os usuários publiquem críticas de filmes.
-- [ ] Permitir que os usuários alterem e excluam suas próprias críticas.
-- [ ] Avaliar filmes com base em critérios específicos (roteiro, personagens, trilha sonora, etc.).
-- [ ] Permitir que os usuários pesquisem filmes em cartaz, lançamentos futuros e filmes antigos.
-- [ ] Exibir um ranking de filmes com base nas avaliações dos usuários.
-- [ ] Possibilitar o cadastro e login de novos usuários.
-- [ ] Permitir que os usuários favoritem filmes e acessem suas listas de favoritos.
-- [ ] Recuperar senhas via e-mail.
-- [ ] Permitir a comparação entre diferentes críticas de um mesmo filme.
-- [ ] Exibir uma página de filmes favoritos para cada usuário.
-- [ ] Denunciar críticas que violem as diretrizes da plataforma.
+- [X] Permitir que os usuários publiquem críticas de filmes.
+- [X] Permitir que os usuários alterem e excluam suas próprias críticas.
+- [X] Avaliar filmes com base em critérios específicos (roteiro, personagens, trilha sonora, etc.).
+- [X] Permitir que os usuários pesquisem filmes em cartaz, lançamentos futuros e filmes antigos.
+- [X] Exibir um ranking de filmes com base nas avaliações dos usuários.
+- [X] Possibilitar o cadastro e login de novos usuários.
+- [ ] Permitir que os usuários favoritem filmes e acessem suas listas de favoritos. 
+
 
 ## Tecnologias Utilizadas
 - **Frontend**: JavaScript
@@ -73,11 +70,9 @@ Abaixo estão as principais funcionalidades do projeto, organizadas como um chec
 ## 📝 Perfis de acesso: 
 
 - **Administrador:** Acesso total
-- **Moderador:** Acesso 
-- **Desenvolvedor Teste (Corretor de Bugs)** - privilegiado
-- **Gestor de Conteúdo Usuário Final** - privilegiado
-- **Usuário**
-
+- **Moderador:** Acesso ao dashbord de filmes (Alimentar o sistema)
+- **Desenvolvedor:** Acesso ao código-fonte
+- **Usuário Comum:** Acesso a critica, catagalogo, comentário e avaliações
 
 
 ![cinecaju](assets/cinecaju_logo.jpeg)
