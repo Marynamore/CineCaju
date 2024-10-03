@@ -24,6 +24,53 @@ Abaixo estão as principais funcionalidades do projeto, organizadas como um chec
 - **Backend**: Node.js, Express.js
 - **Banco de Dados**: PostgreSQL
 
+## 📋 Requisitos Funcionais
+
+1. **[RF001] Publicar Crítica de Filme**: Permitir que usuários publiquem críticas detalhadas de filmes.
+   - Prioridade: Essencial
+
+2. **[RF002] Alterar Crítica de Filme**: Permitir que o usuário altere suas críticas.
+   - Prioridade: Essencial
+
+3. **[RF003] Excluir Crítica de Filme**: Permitir que o usuário exclua suas críticas.
+   - Prioridade: Essencial
+
+4. **[RF004] Pesquisar Filmes**: O sistema deverá permitir a busca por filmes em cartaz e lançamentos.
+   - Prioridade: Essencial
+
+5. **[RF005] Ranking de Filmes**: Exibir rankings de filmes baseados nas avaliações.
+   - Prioridade: Importante
+
+6. **[RF006] Cadastro de Usuário e Login**: Permitir cadastro de novos usuários e autenticação segura.
+   - Prioridade: Essencial
+
+7. **[RF007] Recuperar Senha**: O sistema deve ter um mecanismo de recuperação de senha via e-mail.
+   - Prioridade: Essencial
+
+8. **[RF008] Denunciar Crítica**: Os usuários poderão denunciar críticas impróprias.
+    - Prioridade: Importante
+
+## 📊 Requisitos Não Funcionais
+
+1. **[RNF001] Usabilidade**: Interface responsiva e intuitiva para desktop e dispositivos móveis.
+   - Prioridade: Essencial
+
+2. **[RNF002] Segurança**: Autenticação segura via JWT e criptografia de senhas.
+   - Prioridade: Essencial
+
+3. **[RNF003] Desempenho**: Tempo de resposta para busca de filmes e carregamento de críticas não deve exceder 2 segundos.
+   - Prioridade: Essencial
+
+4. **[RNF004] Escalabilidade**: Suportar até 1000 usuários simultâneos.
+   - Prioridade: Importante
+
+5. **[RNF005] Conformidade LGPD**: O sistema deve seguir as diretrizes da Lei Geral de Proteção de Dados.
+   - Prioridade: Essencial
+
+6. **[RNF006] Compatibilidade com Dispositivos Móveis**: Funcionar em smartphones e tablets com resolução mínima de 1280x720.
+   - Prioridade: Essencial
+
+
 ![cinecaju](assets/cinecaju_logo.jpeg)
 
 ## Instalação e Configuração
