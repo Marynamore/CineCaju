@@ -70,9 +70,9 @@ Abaixo estão as principais funcionalidades do projeto, organizadas como um chec
 ## 📝 Perfis de acesso: 
 
 - **Administrador:** Acesso total
-- **Moderador:** Acesso ao dashbord de filmes (Alimentar o sistema)
+- **Moderador:** Acesso ao dashboard de filmes (Alimentar o sistema)
 - **Desenvolvedor:** Acesso ao código-fonte
-- **Usuário Comum:** Acesso a critica, catagalogo, comentário e avaliações
+- **Usuário Comum:** Acesso a critica, catalogo, comentário e avaliações
 
 
 ![cinecaju](assets/cinecaju_logo.jpeg)
