@@ -1,4 +1,4 @@
-![cc](assets/cc_logo.png)
+![cc](assets/LogoCineCaju2.png)
 # CineCaju 🎥🎬
 
 Este projeto visa criar um site de críticas construtivas de filmes em cartaz. A ideia é ajudar os telespectadores a escolherem filmes com base em diversos critérios como roteiro, personagens, duração, trilha sonora e efeitos visuais.
@@ -75,7 +75,7 @@ Abaixo estão as principais funcionalidades do projeto, organizadas como um chec
 - **Usuário Comum:** Acesso a critica, catalogo, comentário e avaliações
 
 
-![cinecaju](assets/cinecaju_logo.jpeg)
+![cinecaju](assets/banner2.jpeg)
 
 ## Instalação e Configuração
 
