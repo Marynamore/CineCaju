@@ -250,27 +250,25 @@ nav {
     top: 30%;
 }
 
-.banner h1 {
-    color: #fff;
-    font-size: 3.5rem;
-    font-family: var(--font-primary);
-    font-weight: 200;
-    text-shadow: 0.3rem 0.4rem 2px rgba(0, 0, 0, 0.4);
-    line-height: 3.5rem;
-    margin-bottom: 2rem;
-    opacity: 0;
-    animation: moveBanner 1s 0.5s forwards;
-}
-
-.banner p {
-    font-family: var(--font-paragraph);
-    color: #fff;
-    font-size: 1.6rem;
-    opacity: 0;
-    text-shadow: 0.2rem 0.2rem rgba(0, 0, 0, 0.4);
-    margin-bottom: 2rem;
-    animation: moveBanner 1s 0.9s forwards;
-}
+.box{
+    display: flex;
+    width: 100%;
+    height: 90vh;
+    
+ }
+ 
+ .box-image img{
+    width: 100%;
+    height: 500px;
+    animation: anima;
+    animation-duration: 800ms;
+ }
+ 
+ @keyframes anima{
+     from{transform: translate(-50px,00);}
+     to{transform: translate(0px,00);}
+ }
+ 
 
 .header__social {
     display: flex;
@@ -549,38 +547,3 @@ footer {
     color: #fff;
     font-size: 1.5rem;
 }
-
-/* Responsive Styles */
-
-/* Mídias para layout do carrossel */
-@media (max-width: 480px) {
-    .splide__slide {
-        flex: 1 0 calc(100% - 20px); /* Um item por linha */
-        max-width: calc(100% - 20px); /* Um item por linha */
-    }
-}
-
-@media (min-width: 768px) {
-    .splide__slide {
-        flex: 1 0 calc(50% - 20px); /* Dois itens por linha */
-        max-width: calc(50% - 20px); /* Dois itens por linha */
-    }
-}
-
-@media (min-width: 1024px) {
-    .header__wrap{
-        position: relative;
-    }
-    .splide__slide {
-        flex: 1 0 calc(33.33% - 20px); /* Três itens por linha */
-        max-width: calc(33.33% - 20px); /* Três itens por linha */
-    }
-}
-
-@media (min-width: 1280px) {
-    .splide__slide {
-        flex: 1 0 calc(33.33% - 20px); /* Três itens por linha */
-        max-width: calc(33.33% - 20px); /* Três itens por linha */
-    }
-}
-
