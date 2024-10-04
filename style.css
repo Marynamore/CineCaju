@@ -143,7 +143,7 @@ header {
 }
 
 .header__logo img {
-    height: 40px;
+    height: 10rem;
 }
 
 nav {
@@ -152,11 +152,6 @@ nav {
     justify-content: space-between;
     width: auto;
 }
-
-nav i{
-    color: #976e4e;
-}
-
 
 
 .header__menu--links {
