@@ -44,44 +44,40 @@ img {
 
 /* Header */
 .container__header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background-color: var(--background-color);
-    padding: 20px 0;
 }
 
 .header__menu {
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 15px;
+    padding: 10px 0;
+    height: auto;
+    min-height: 80px;
+    box-sizing: border-box;
 }
 
 .header__logo img {
     max-height: 125px;
 }
 
-.header__menu--links {
+.center__menu{
     display: flex;
-    gap: 20px;
+    justify-content: space-between;
+    align-items: center;
+    width: 70%;
 }
 
-.header__menu--links a{
-    color: var(--text-secondary-color);
-    font-weight: 600;
-    transition: var(--transition-speed);
-}
-
-.header__menu--links a:hover{
-    color: var(--text-secondary-color);
-}
-
-.header__menu--input {
+.header__menu--input{
     display: flex;
     align-items: center;
 }
 
-.header__menu--input input {
+.header__menu--input input{
     padding: 10px;
     border-radius: 5px;
     border: none;
@@ -95,19 +91,75 @@ img {
     height: 20px;
 }
 
+.header__user{
+    display: flex;
+    align-items: center;
+}
+
 .header__user img {
     width: 50px;
     height: 50px;
     border-radius: 50%;
 }
 
+.header__user a{
+    margin: 0 15px;
+    font-size: 0.9em;
+    color: var(--body-color);
+}
+
+.header__user i{
+    margin: 0.9em;
+    color: var(--body-color);
+    transition: all 0.3s ease-in-out;
+}
+
+.header__user i:hover{
+    color: rgb(133, 133, 133);
+}
+
+.nav__pages{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    background-color: var(--primary-color);
+}
+
+.nav__pages ul{
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+    margin: 0;
+}
+
+.nav__pages li{
+    list-style: none;
+    margin: 0 20px;
+    text-align: center;
+}
+
+.nav__pages a{
+    color: var(--body-color);
+    font-size: 1.2em;
+    transition: all 0.3s ease-in-out;
+}
+
+.nav__pages a:hover{
+    color: rgb(133, 133, 133);
+}
+
+
 /* Banner */
+
+.banner__img{
+    margin-top: 0;
+}
  
 .banner__img img{
     width: 100%;
     height: auto;
     border-radius: 10px;
-    margin: 20px 0;
+    margin: 0;
 }
 
 /* === MAIN === */

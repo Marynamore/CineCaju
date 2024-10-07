@@ -16,40 +16,33 @@
     <!-- Cabeçalho -->
     <header>
         <div class="container__header">
-            <section class="header__menu">
+            <div class="header__menu">
                 <div class="header__logo">
                     <img src="./assets/LogoCineCaju2.png" alt="Logotipo CineCaju">
                 </div>
-
-                <nav>
-                    <div class="header__menu--links" id="headerMenuLinks">
-                        <a href="index.html"><i class="fas fa-house"></i> Inicio</a>
-                        <div class="dropdown">
-                            <a href="#">Últimas Notícias <i class="fas fa-chevron-down"></i></a>
-                            <div class="dropdown-content">
-                                <a href="#">Notícia 1</a>
-                                <a href="#">Notícia 2</a>
-                            </div>
-                        </div>
-                        <div class="dropdown">
-                            <a href="#">Categoria <i class="fas fa-chevron-down"></i></a>
-                            <div class="dropdown-content">
-                                <a href="#sugestoes">Sugestões</a>
-                                <a href="#criticas">Críticas</a>
-                            </div>
-                        </div>
-                        <a href="../app/user/control/sair_usu_action.php"><i class="fas fa-sign-out-alt"></i> Sair</a>
-                    </div>
+                <section class="center__menu">
                     <div class="header__menu--input">
                         <input type="text" name="movie-name" id="movie-search" placeholder="Pesquisar...">
-                        <img class="searchIcon" src="./public/assets/avaliacao/search-icon.svg" alt="Ícone de pesquisa" >
+                        <a href="#">                        <img class="searchIcon" src="assets/search-icon.svg" alt="Ícone de pesquisa" >
+                        </a>
                     </div>
-                    <a href="../app/user/view/perfil_usuario.php" class="header__user">
-                        <img src="./assets/pessoas/pic-1.png" alt="Avatar usuário">
-                    </a>
-                </nav>
-            </section>
+                    <div class="header__user">
+                        <a href="../app/user/view/perfil_usuario.php">
+                            <img src="./assets/pessoas/pic-1.png" alt="Avatar usuário">
+                        </a>
+                        <a href="../app/user/control/sair_usu_action.php"><i class="fas fa-sign-out-alt"></i> Sair</a>
+                    </div>  
+                </section>
+            </div>
         </div>
+        <nav class="nav__pages">
+            <ul>
+                <li><a href=""><i class="fas fa-house"></i><br>Início</a></li>
+                <li><a href=""><i class="fas fa-lightbulb"></i><br>Sugestões</a></li>
+                <li><a href=""><i class="fas fa-star"></i><br>Destaque</a></li>
+                <li><a href=""><i class="fas fa-comment"></i><br>Crítica</a></li>
+            </ul>
+        </nav>
         <section class="header__content">
             <div class="banner">
                 <div class="banner__img">
