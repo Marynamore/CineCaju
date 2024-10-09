@@ -220,7 +220,7 @@ img {
 .splide__arrow {
     background-color: 0 4px 8px rgba(0, 0, 0, 0.1);
     border: none;
-    color: var(--text-color);
+    color: var(--text-secondary-color);
     font-size: 2.5em;
     padding: 15px;
     cursor: pointer;
