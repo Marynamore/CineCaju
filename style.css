@@ -75,6 +75,9 @@ img {
 .header__menu--input{
     display: flex;
     align-items: center;
+    background-color: var(--text-secondary-color);
+    border-radius: 5px;
+    padding: 5px 10px;
 }
 
 .header__menu--input input{
@@ -305,7 +308,7 @@ img {
     position: absolute;
     bottom: 10px;
     left: 10px;
-    color: var(--text-color);
+    color: var(--text-secondary-color);
 }
 
 .title__bottom {
@@ -334,6 +337,10 @@ img {
     background-color: var(--primary-color);
     border-radius: 10px;
     margin-bottom: 40px;
+}
+
+.container__critica{
+    color: var(--text-secondary-color);
 }
 
 .grid-container {

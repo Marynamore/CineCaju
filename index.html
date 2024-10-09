@@ -35,14 +35,14 @@
                 </section>
             </div>
         </div>
-        <nav class="nav__pages">
-            <ul>
-                <li><a href=""><i class="fas fa-house"></i><br>Início</a></li>
-                <li><a href=""><i class="fas fa-lightbulb"></i><br>Sugestões</a></li>
-                <li><a href=""><i class="fas fa-star"></i><br>Destaque</a></li>
-                <li><a href=""><i class="fas fa-comment"></i><br>Crítica</a></li>
-            </ul>
-        </nav>
+    <nav class="nav__pages">
+        <ul>
+            <li><a href="index.html"><i class="fas fa-house"></i><br>Início</a></li>
+            <li><a href="#sugestoes"><i class="fas fa-lightbulb"></i><br>Sugestões</a></li>
+            <li><a href="#destaque"><i class="fas fa-star"></i><br>Destaque</a></li>
+            <li><a href="#criticas"><i class="fas fa-comment"></i><br>Crítica</a></li>
+        </ul>
+    </nav>
         <section class="header__content">
             <div class="banner">
                 <div class="banner__img">
@@ -56,12 +56,12 @@
     <main class="container__main">
 
         <!-- Sessão de Filmes -->
-        <section id="filmes">
+        <section id="sugestoes">
             <div class="title__wrapper">
                 <h3 class="category__title--h3">Sugestões</h3>
                 <p class="title__p">Uma seleção com dicas dos melhores filmes e séries do momento.</p>
             </div>
-                <section class="splide">
+                <section id="sugestoes-carousel" class="splide">
                     <div class="splide__track">
                         <div class="splide__list category__filmes">
                             
@@ -124,11 +124,11 @@
             </div>
         </section>
 
-        <section id="criticas" class="container container__reviews">
+        <section id="criticas" class="container__reviews">
             <div class="container__main">
                 <div class="title__wrapper">
-                    <h3 class="category__title--h3">Críticas</h3>
-                    <p class="title__p">Confira as opiniões e análises dos melhores filmes e séries.</p>
+                    <h3 class="category__title--h3 container__critica">Críticas</h3>
+                    <p class="title__p container__critica">Confira as opiniões e análises dos melhores filmes e séries.</p>
                 </div>
                 <section id="criticas-carousel" class="splide">
                     <div class="splide__track">
@@ -212,12 +212,6 @@
             pagination: false,
             arrows: true,
         }).mount();
-    });
-
-    const menuIcon = document.getElementById('menuIcon');
-    const headerMenuLinks = document.getElementById('headerMenuLinks');
-    menuIcon.addEventListener('click', () => {
-        headerMenuLinks.classList.toggle('active');
     });
 </script>
 </body>
